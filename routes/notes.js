@@ -1,7 +1,10 @@
 const notes = require('express').Router();
 
-//* built-in read/write system that allows us to view files 
+//* helper to read and write json files 
 const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+
+//*helper to create random number for note id
+const uuid = require('../helpers/uuid');
 
 //* GET route to retrieve stored notes
 notes.get('/', (req, res) => {
@@ -18,6 +21,7 @@ notes.post('/', (req, res) => {
     const newNote = {
       title,
       text,
+      id: uuid(),
     };
   
     const response = {
