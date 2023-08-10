@@ -4,7 +4,7 @@
 
 ![My Image](./public/assets/images/note%20taker%20readme%20picture.png)
 
-Link to deployed application:
+Link to deployed application: https://tranquil-temple-26515-c11f6043e5fe.herokuapp.com/
 
 ## Table of Contents
 
