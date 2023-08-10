@@ -146,7 +146,9 @@ const renderNoteList = async (notes) => {
         'text-danger',
         'delete-note'
       );
+      //* Adds event listener for delete button and render active note for each note in the list
       delBtnEl.addEventListener('click', handleNoteDelete);
+      liEl.addEventListener('click', handleNoteView);
 
       liEl.append(delBtnEl);
     }
